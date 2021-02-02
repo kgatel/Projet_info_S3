@@ -22,7 +22,7 @@ var a,r1,r2,t1,t11,t22,t2,i,j,repetitionechec,repetitionpat,constanteposition,x1
 	
 	
 
-const 	adresse ='data\sauvegarde.txt';
+const 	adresse ='data/sauvegarde.txt';
 		surfacelargeur=900;
 		surfacelongueur=600;
 		imagelargeur=60;
@@ -67,7 +67,6 @@ clrscr;
 	 end;
 	
 end;
-
 
 procedure initialisation();
 var iplace : integer;
@@ -207,67 +206,67 @@ end;
 	procedure loadimage();
 begin
 
-caseblanc:=img_load('data\caseblanc.png');
-casenoir:=img_load('data\casenoir.png');
-casejaune:=img_load('data\casejaune.png');
-caseroque:=img_load('data\caseroque.png');
-casedeplacementvide:=img_load('data\casedeplacementvide.png');
-casedeplacementpiece:=img_load('data\casedeplacementpiece.png');
-casedeplacementechec:=img_load('data\casedeplacementechec.png');
+caseblanc:=img_load('data/caseblanc.png');
+casenoir:=img_load('data/casenoir.png');
+casejaune:=img_load('data/casejaune.png');
+caseroque:=img_load('data/caseroque.png');
+casedeplacementvide:=img_load('data/casedeplacementvide.png');
+casedeplacementpiece:=img_load('data/casedeplacementpiece.png');
+casedeplacementechec:=img_load('data/casedeplacementechec.png');
 
-curseurviolet:=img_load('data\curseurviolet.png');
-curseur:=img_load('data\curseur.png');
-curseurnoir:=img_load('data\curseurnoir.png');
-curseurblanc:=img_load('data\curseurblanc.png');
-curseurrouge:=img_load('data\curseurrouge.png');
-curseurjaune:=img_load('data\curseurjaune.png');
-curseurvert:=img_load('data\curseurvert.png');
-curseurbleu:=img_load('data\curseurbleu.png');
+curseurviolet:=img_load('data/curseurviolet.png');
+curseur:=img_load('data/curseur.png');
+curseurnoir:=img_load('data/curseurnoir.png');
+curseurblanc:=img_load('data/curseurblanc.png');
+curseurrouge:=img_load('data/curseurrouge.png');
+curseurjaune:=img_load('data/curseurjaune.png');
+curseurvert:=img_load('data/curseurvert.png');
+curseurbleu:=img_load('data/curseurbleu.png');
 
-roiblanc:=img_load('data\roiblanc.png');
-roinoir:=img_load('data\roinoir.png');
-reineblanc:=img_load('data\reineblanc.png');
-reinenoir:=img_load('data\reinenoir.png');
-tourblanc:=img_load('data\tourblanc.png');
-tournoir:=img_load('data\tournoir.png');
-cavalierblanc:=img_load('data\cavalierblanc.png');
-cavaliernoir:=img_load('data\cavaliernoir.png');
-foublanc:=img_load('data\foublanc.png');
-founoir:=img_load('data\founoir.png');
-pionblanc:=img_load('data\pionblanc.png');
-pionnoir:=img_load('data\pionnoir.png');
+roiblanc:=img_load('data/roiblanc.png');
+roinoir:=img_load('data/roinoir.png');
+reineblanc:=img_load('data/reineblanc.png');
+reinenoir:=img_load('data/reinenoir.png');
+tourblanc:=img_load('data/tourblanc.png');
+tournoir:=img_load('data/tournoir.png');
+cavalierblanc:=img_load('data/cavalierblanc.png');
+cavaliernoir:=img_load('data/cavaliernoir.png');
+foublanc:=img_load('data/foublanc.png');
+founoir:=img_load('data/founoir.png');
+pionblanc:=img_load('data/pionblanc.png');
+pionnoir:=img_load('data/pionnoir.png');
 
-votredeplacementestinvalide :=img_load('data\txt\votredeplacementestinvalide.png');
-veuillezchoisirunedevospieces:=img_load('data\txt\veuillezchoisirunedevospieces.png');
-joueur1avousdejouer:=img_load('data\txt\joueur1avousdejouer.png');
-joueur2avousdejouer:=img_load('data\txt\joueur2avousdejouer.png');
-quellepiecevoulezvouschoisir:=img_load('data\txt\quellepiecevoulezvouschoisir.png');
-deplacementnonvalidevousdevezprotegervotreroi:=img_load('data\txt\deplacementnonvalidevousdevezprotegervotreroi.png');
-ouvoulezvousdeplacervotrepiece:=img_load('data\txt\ouvoulezvousdeplacervotrepiece.png');
-joueur1vousetesenechec:=img_load('data\txt\joueur1vousetesenechec.png');
-joueur2vousetesenechec:=img_load('data\txt\joueur2vousetesenechec.png');
-echecetmatlejoueur1lemporte:=img_load('data\txt\echecetmatlejoueur1lemporte.png');
-echecetmatlejoueur2lemporte:=img_load('data\txt\echecetmatlejoueur2lemporte.png');
-patte:=img_load('data\txt\pat.png');
-partieterminee:=img_load('data\txt\partieterminee.png');
-textnoir:=img_load('data\txt\textnoir.png');
+votredeplacementestinvalide :=img_load('data/txt/votredeplacementestinvalide.png');
+veuillezchoisirunedevospieces:=img_load('data/txt/veuillezchoisirunedevospieces.png');
+joueur1avousdejouer:=img_load('data/txt/joueur1avousdejouer.png');
+joueur2avousdejouer:=img_load('data/txt/joueur2avousdejouer.png');
+quellepiecevoulezvouschoisir:=img_load('data/txt/quellepiecevoulezvouschoisir.png');
+deplacementnonvalidevousdevezprotegervotreroi:=img_load('data/txt/deplacementnonvalidevousdevezprotegervotreroi.png');
+ouvoulezvousdeplacervotrepiece:=img_load('data/txt/ouvoulezvousdeplacervotrepiece.png');
+joueur1vousetesenechec:=img_load('data/txt/joueur1vousetesenechec.png');
+joueur2vousetesenechec:=img_load('data/txt/joueur2vousetesenechec.png');
+echecetmatlejoueur1lemporte:=img_load('data/txt/echecetmatlejoueur1lemporte.png');
+echecetmatlejoueur2lemporte:=img_load('data/txt/echecetmatlejoueur2lemporte.png');
+patte:=img_load('data/txt/pat.png');
+partieterminee:=img_load('data/txt/partieterminee.png');
+textnoir:=img_load('data/txt/textnoir.png');
 
-un:=img_load('data\timer\un.png');
-deux:=img_load('data\timer\deux.png');
-trois:=img_load('data\timer\trois.png');
-quatre:=img_load('data\timer\quatre.png');
-cinq:=img_load('data\timer\cinq.png');
-six:=img_load('data\timer\six.png');
-sept:=img_load('data\timer\sept.png');
-huit:=img_load('data\timer\huit.png');
-neuf:=img_load('data\timer\neuf.png');
-zero:=img_load('data\timer\zero.png');
-deuxpoints:=img_load('data\timer\deuxpoints.png');
-timerjoueur1:=img_load('data\timer\timerjoueur1.png');
-timerjoueur2:=img_load('data\timer\timerjoueur2.png');
-timermin:=img_load('data\timer\timermin.png');
-timersec:=img_load('data\timer\timersec.png');
-chiffrenoir:=img_load('data\timer\chiffrenoir.png');
+un:=img_load('data/timer/un.png');
+deux:=img_load('data/timer/deux.png');
+trois:=img_load('data/timer/trois.png');
+quatre:=img_load('data/timer/quatre.png');
+cinq:=img_load('data/timer/cinq.png');
+six:=img_load('data/timer/six.png');
+sept:=img_load('data/timer/sept.png');
+huit:=img_load('data/timer/huit.png');
+neuf:=img_load('data/timer/neuf.png');
+zero:=img_load('data/timer/zero.png');
+deuxpoints:=img_load('data/timer/deuxpoints.png');
+timerjoueur1:=img_load('data/timer/timerjoueur1.png');
+timerjoueur2:=img_load('data/timer/timerjoueur2.png');
+timermin:=img_load('data/timer/timermin.png');
+timersec:=img_load('data/timer/timersec.png');
+chiffrenoir:=img_load('data/timer/chiffrenoir.png');
 end;
 procedure freeimagecase();
 
@@ -876,105 +875,105 @@ begin
     sdl_flip(window);
 End;
 
-procedure timer(a,tempsdebase1,tempsdebase2,temps_debut_program,delay11,delay22 : integer ;var t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,tps_initial1,tps_initial2 : integer; var wsh1,wsh2 : boolean);
+procedure timer(a,tempsdebase1,tempsdebase2,temps_debut_program,delay11,delay22 : integer ;var t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,tps_initial1,tps_initial2 : integer);
 var h,he,m,min,s,sec,cent,centieme,chiffre2,chiffre : word;
 begin
 if a=1 then
-	begin
-	gettime(h,m,s,centieme);
-	tt:=(h*3600+m*60+s);
-	for i:=1 to tps_initial1 do
-		begin
-			if tt-t=i then
-				begin
-				delay1:=tt-ss;
-				t:=tt;
-				seconde:=tps_initial1-(tt-temps_debut_program)+delay22; 
-				
-				minute:=seconde div 60;
-				seconde:=seconde-60*minute;
-				
-							
-				chiffre:=minute div 10 ;position.x:=760;position.y:=20;
-				sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-				timer_sdl(chiffre);
-				chiffre:=minute mod 10; position.x:=780;position.y:=20;
-				sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-				timer_sdl(chiffre);
-				
-				chiffre:=seconde div 10; position.x:=830;position.y:=20;
-				sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-				timer_sdl(chiffre);
-				chiffre:=seconde mod 10; position.x:=850;position.y:=20;
-				sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-				timer_sdl(chiffre);
-				
-				chiffre2:=minute2 div 10 ;position.x:=760;position.y:=45;
-				sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-				timer_sdl(chiffre2);
-				chiffre2:=minute2 mod 10; position.x:=780;position.y:=45;
-				sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-				timer_sdl(chiffre2);
-				position.x:=800;
-			
-				chiffre2:=seconde2 div 10; position.x:=830;position.y:=45;
-				sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-				timer_sdl(chiffre2);
-				chiffre2:=seconde2 mod 10; position.x:=850;position.y:=45;
-				sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-				timer_sdl(chiffre2);
-				
-				end;
-		end;
-	end;
+    begin
+    gettime(h,m,s,centieme);
+    tt:=(h*3600+m*60+s);
+    for i:=1 to tps_initial1 do
+        begin
+            if tt-t=i then
+                begin
+                delay1:=tt-ss;
+                t:=tt;
+                seconde:=tps_initial1-(tt-temps_debut_program)+delay22;
+
+                minute:=seconde div 60;
+                seconde:=seconde-60*minute;
+
+
+                chiffre:=minute div 10 ;position.x:=760;position.y:=20;
+                sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+                timer_sdl(chiffre);
+                chiffre:=minute mod 10; position.x:=780;position.y:=20;
+                sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+                timer_sdl(chiffre);
+
+                chiffre:=seconde div 10; position.x:=830;position.y:=20;
+                sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+                timer_sdl(chiffre);
+                chiffre:=seconde mod 10; position.x:=850;position.y:=20;
+                sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+                timer_sdl(chiffre);
+
+                chiffre2:=minute2 div 10 ;position.x:=760;position.y:=45;
+                sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+                timer_sdl(chiffre2);
+                chiffre2:=minute2 mod 10; position.x:=780;position.y:=45;
+                sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+                timer_sdl(chiffre2);
+                position.x:=800;
+
+                chiffre2:=seconde2 div 10; position.x:=830;position.y:=45;
+                sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+                timer_sdl(chiffre2);
+                chiffre2:=seconde2 mod 10; position.x:=850;position.y:=45;
+                sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+                timer_sdl(chiffre2);
+
+                end;
+        end;
+    end;
 if a=2 then
-	begin
-	gettime(he,min,sec,cent);
-	sss:=(he*3600+min*60+sec);
-	for i:=1 to tps_initial2 do
-	begin
-	if sss-ss=i then
-		begin
-			delay2:=sss-t;
-			ss:=sss;
-			seconde2:=tps_initial2-(sss-temps_debut_program)+delay11;
-			minute2:=seconde2 div 60;
-			seconde2:=seconde2-60*minute2;
-			
-			chiffre2:=minute2 div 10;	position.x:=760;position.y:=45;
-			sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-			timer_sdl(chiffre2);
-			chiffre2:=minute2 mod 10; position.x:=780;position.y:=45;
-			sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-			timer_sdl(chiffre2);
-						
-			chiffre2:=seconde2 div 10; position.x:=830;position.y:=45;
-			sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-			timer_sdl(chiffre2);
-			chiffre2:=seconde2 mod 10; position.x:=850;position.y:=45;
-			sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-			timer_sdl(chiffre2);
-			
-			chiffre:=minute div 10;	position.x:=760;position.y:=20;
-			sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-			timer_sdl(chiffre);
-			chiffre:=minute mod 10; position.x:=780;position.y:=20;
-			sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-			timer_sdl(chiffre);
-						
-			chiffre:=seconde div 10; position.x:=830;position.y:=20;
-			sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-			timer_sdl(chiffre);
-			chiffre:=seconde mod 10; position.x:=850;position.y:=20;
-			sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
-			timer_sdl(chiffre);
-			
-			
-			
-		end;
-	end;
-	end;
-	
+    begin
+    gettime(he,min,sec,cent);
+    sss:=(he*3600+min*60+sec);
+    for i:=1 to tps_initial2 do
+    begin
+    if sss-ss=i then
+        begin
+            delay2:=sss-t;
+            ss:=sss;
+            seconde2:=tps_initial2-(sss-temps_debut_program)+delay11;
+            minute2:=seconde2 div 60;
+            seconde2:=seconde2-60*minute2;
+
+            chiffre2:=minute2 div 10;   position.x:=760;position.y:=45;
+            sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+            timer_sdl(chiffre2);
+            chiffre2:=minute2 mod 10; position.x:=780;position.y:=45;
+            sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+            timer_sdl(chiffre2);
+
+            chiffre2:=seconde2 div 10; position.x:=830;position.y:=45;
+            sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+            timer_sdl(chiffre2);
+            chiffre2:=seconde2 mod 10; position.x:=850;position.y:=45;
+            sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+            timer_sdl(chiffre2);
+
+            chiffre:=minute div 10; position.x:=760;position.y:=20;
+            sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+            timer_sdl(chiffre);
+            chiffre:=minute mod 10; position.x:=780;position.y:=20;
+            sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+            timer_sdl(chiffre);
+
+            chiffre:=seconde div 10; position.x:=830;position.y:=20;
+            sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+            timer_sdl(chiffre);
+            chiffre:=seconde mod 10; position.x:=850;position.y:=20;
+            sdl_blitsurface(chiffrenoir,nil, window,@position);sdl_flip(window);
+            timer_sdl(chiffre);
+
+
+
+        end;
+    end;
+    end;
+
 end;
 
 
@@ -1835,181 +1834,201 @@ begin
 		if echec=true then pat0:=false;
 end;
 
- procedure deplacement2(tempsdebase1,tempsdebase2,delay1,delay2,temps_debut_program : integer; var t,tt,xtab,ytab,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,r1,r2,t1,t11,t2,t22,compteur,delay11,delay22 : integer; var p1,p3,p4 : string; var cste,a : integer; var vf,echec,prise_en_passant0,changementdepion,repetitionaffichage : boolean);
+procedure deplacement2(tempsdebase1,tempsdebase2,delay1,delay2,temps_debut_program : integer; var t,tt,xtab,ytab,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,r1,r2,t1,t11,t2,t22,compteur,delay11,delay22 : integer; var p1,p3,p4 : string; var cste,a : integer; var vf,echec,prise_en_passant0,changementdepion,repetitionaffichage : boolean);
 var x2tab, y2tab : integer;
-	p2 : string;
-	piecechoisie : string;
-	roque,echek_loop : boolean;
+    p2 : string;
+    piecechoisie : string;
+    roque : boolean;
 begin
-	changementdepion:=false;
-	x2tab:=((x -1) div 4)+1;
-	y2tab:=((y -1) div 2)+1;
-	p2:=tab[x2tab,y2tab];
-	roque:=false;
-	echek_loop:= false;
-	case a of
-		1: begin x5tab:=x2tab; y5tab:=y2tab end;
-		2: begin x6tab:=x2tab; y6tab:=y2tab end;
-	end;
-		
-	deplacementvalide(xtab,x2tab,ytab,y2tab,a,p1,vf,roque);	
-	//roque
-	if ( ((p1='roib')and( ((x2tab=3)or(x2tab=7))and(y2tab=8))) or ((p1='roin')and( ((x2tab=3)or(x2tab=7))and(y2tab=1))) ) then
-	begin roc(xtab,x2tab,ytab,y2tab,r1,r2,t1,t11,t2,t22,p1,p2,vf,roque) end;
-	//prise en passant	
-	if ( (a=1)and(p4='pionn')and(y4tab=2)and(y6tab=4)and(x4tab=x6tab) )or( (a=2)and(p3='pionb')and(y3tab=7)and(y5tab=5)and(x3tab=x5tab) ) then
-	begin prise_en_passant(xtab,x2tab,ytab,y2tab,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0) end;
-		if vf=false then
-		begin
-			if a=1 then
-				case tab[x2tab,y2tab] of
-					'pionb','tourb','cavalierb','foub','roib','reineb' : begin changementdepion:=true; xtab:=x2tab; ytab:=y2tab; p1:=tab[xtab,ytab]; p3:=p1; x3tab:=xtab; y3tab:=ytab; end;
-				end;
-			if a=2 then
-				case tab[x2tab,y2tab] of
-					'pionn','tourn','cavaliern','foun','roin','reinen' : begin changementdepion:=true; xtab:=x2tab; ytab:=y2tab; p1:=tab[xtab,ytab]; p4:=p1; x4tab:=xtab; y4tab:=ytab; end;
-				end;
-			cste:=1;
-			if changementdepion=false then
-			begin
-			affichage;
-			cste:=1;
-			affichage();
-			tailletext.x:=80;
-			tailletext.y:=500;
-			sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-			case a of 
-				1 : begin sdl_blitsurface(joueur1avousdejouer, nil, window, @tailletext); sdl_flip(window);end;
-				2 : begin sdl_blitsurface(joueur2avousdejouer, nil, window, @tailletext); sdl_flip(window);end;
-			end;
-			end
-			else
-			repetitionaffichage:=false;
-		end;
-	
-		if vf=true then
-		begin
-				tab[x2tab,y2tab]:=p1;
-				tab[xtab,ytab]:='vide';
-				if ((p1='pionn') and (y2tab=8)) then 
-				begin
-					tailletext.x:=80;
-					tailletext.y:=500;
-					sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-					sdl_blitsurface(quellepiecevoulezvouschoisir, nil, window, @tailletext);sdl_flip(window);
-					sdl_quit();
-					writeln('Quelle piece voulez vous choisir ?');
-					writeln('   - t=tour');
-					writeln('   - c=cavalier');
-					writeln('   - f=fou');
-					writeln('   - R=reine');
-					repeat
-					readln(piecechoisie);
-					if ((piecechoisie='t') or (piecechoisie='c') or (piecechoisie='f') or (piecechoisie='R')) then echek_loop:=true else ;
-					until (echek_loop=true);
-					case piecechoisie of
-						't' : tab[x2tab,y2tab]:='tourn';
-						'c' : tab[x2tab,y2tab]:='cavaliern';
-						'f' : tab[x2tab,y2tab]:='foun';
-						'R' : tab[x2tab,y2tab]:='reinen';
-					end;
-					window :=sdl_setvideomode(surfacelargeur, surfacelongueur, 32, sdl_swsurface);
-					loadimage();
-					damier();
-					affichage();
-					sdl_flip(window);
-				end;
-				if ((p1='pionb') and (y2tab=1)) then 
-				begin
-					tailletext.x:=80;
-					tailletext.y:=500;
-					sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-					sdl_blitsurface(quellepiecevoulezvouschoisir, nil, window, @tailletext);sdl_flip(window);
-					sdl_blitsurface(quellepiecevoulezvouschoisir, nil, window, @tailletext);sdl_flip(window);
-					sdl_quit();
-					writeln('Quelle piece voulez vous choisir ?');
-					writeln('   - t=tour');
-					writeln('   - c=cavalier');
-					writeln('   - f=fou');
-					writeln('   - R=reine');
-					repeat
-					read(piecechoisie);
-					if ((piecechoisie='t') or (piecechoisie='c') or (piecechoisie='f') or (piecechoisie='R')) then echek_loop:=true else ;
-					until (echek_loop=true);
-					case piecechoisie of
-						't' : tab[x2tab,y2tab]:='tourb';
-						'c' : tab[x2tab,y2tab]:='cavalierb';
-						'f' : tab[x2tab,y2tab]:='foub';
-						'R' : tab[x2tab,y2tab]:='reineb';
-					end;	
-					window :=sdl_setvideomode(surfacelargeur, surfacelongueur, 32, sdl_swsurface);
-					loadimage();
-					damier();
-					affichage();
-					sdl_flip(window);		
-				end;
-				
-				echek(a,echec);
-					
-				if echec=false then
-				begin
-					if p1='tourb' then
-						begin
-						if (x2tab=1)and(y2tab=8) then
-							begin t1:=t1+1 end;
-						if (x2tab=8)and(y2tab=8) then
-							begin t11:=t11+1 end;
-						end;
-					if p1='tourn' then
-						begin
-						if (x2tab=1)and(y2tab=1) then
-							begin t2:=t2+1 end;
-						if (x2tab=8)and(y2tab=1) then
-							begin t22:=t22+1 end;
-						end;
-					if p1='roib' then
-						begin r1:=r1+1 end;
-					if p1='roin' then
-						begin r2:=r2+1 end;
-					prise_en_passant(xtab,x2tab,ytab,y2tab,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0);
-					if (a=1)and(p1='pionb')and(prise_en_passant0=true)and(compteur>=3) then
-						begin tab[x6tab,y6tab]:='vide' end;
-					if (a=2)and(p1='pionn')and(prise_en_passant0=true)and(compteur>=3) then
-						begin tab[x5tab,y5tab]:='vide' end;
-					affichage();
-					cste:=2;
-					if a=1 then delay11:=delay11+delay1;
-					if a=2 then delay22:=delay22+delay2;
-					tailletext.x:=80;
-					tailletext.y:=500;
-					sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-					case a of
-						1 : begin a:=2;sdl_blitsurface(joueur2avousdejouer, nil, window, @tailletext); sdl_flip(window);end;
-						2 : begin a:=1;sdl_blitsurface(joueur1avousdejouer, nil, window, @tailletext); sdl_flip(window);end;
-					end;
-					compteur:=compteur+1;
-				end; //end echec=false
-				
-				if echec=true then
-				begin
-						tailletext.x:=80;
-						tailletext.y:=500;
-						sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-						sdl_blitsurface(votredeplacementestinvalide, nil, window, @tailletext);sdl_flip(window);
-						sdl_delay(2000);
-						tab[xtab,ytab]:=p1;
-						tab[x2tab,y2tab]:=p2;
-						cste:=2;
-						
-						affichage();sdl_flip(window);
-					
-				end; //end echec=true
-								
-			end; //end vf=true
-			damier();
-		affichage();sdl_flip(window);
-		cursor.y:=ycursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
-	end; //fin procedure
+    changementdepion:=false;
+    x2tab:=((x -1) div 4)+1;
+    y2tab:=((y -1) div 2)+1;
+    p2:=tab[x2tab,y2tab];
+    roque:=false;
+    case a of
+        1: begin x5tab:=x2tab; y5tab:=y2tab end;
+        2: begin x6tab:=x2tab; y6tab:=y2tab end;
+    end;
+
+    deplacementvalide(xtab,x2tab,ytab,y2tab,a,p1,vf,roque);
+    //roque
+    if ( ((p1='roib')and( ((x2tab=3)or(x2tab=7))and(y2tab=8))) or ((p1='roin')and( ((x2tab=3)or(x2tab=7))and(y2tab=1))) ) then
+    begin roc(xtab,x2tab,ytab,y2tab,r1,r2,t1,t11,t2,t22,p1,p2,vf,roque) end;
+    //prise en passant
+    if ( (a=1)and(p4='pionn')and(y4tab=2)and(y6tab=4)and(x4tab=x6tab) )or( (a=2)and(p3='pionb')and(y3tab=7)and(y5tab=5)and(x3tab=x5tab) ) then
+    begin prise_en_passant(xtab,x2tab,ytab,y2tab,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0) end;
+        if vf=false then
+        begin
+            if a=1 then
+                case tab[x2tab,y2tab] of
+                    'pionb','tourb','cavalierb','foub','roib','reineb' : begin changementdepion:=true; xtab:=x2tab; ytab:=y2tab; p1:=tab[xtab,ytab]; p3:=p1; x3tab:=xtab; y3tab:=ytab; end;
+                end;
+            if a=2 then
+                case tab[x2tab,y2tab] of
+                    'pionn','tourn','cavaliern','foun','roin','reinen' : begin changementdepion:=true; xtab:=x2tab; ytab:=y2tab; p1:=tab[xtab,ytab]; p4:=p1; x4tab:=xtab; y4tab:=ytab; end;
+                end;
+            if changementdepion=false then
+            begin
+            clrscr; affichage;
+            tailletext.x:=80;
+            tailletext.y:=500;
+            sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+            sdl_blitsurface(votredeplacementestinvalide, nil, window, @tailletext);
+            sdl_flip(window);
+            sdl_delay(500);
+            tailletext.x:=80;
+            tailletext.y:=540;
+            sdl_blitsurface(veuillezchoisirunedevospieces, nil, window, @tailletext);
+            sdl_flip(window);
+            sdl_delay(500);
+            cste:=1;
+            affichage();
+            tailletext.x:=80;
+            tailletext.y:=500;
+            sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+            case a of
+                1 : begin sdl_blitsurface(joueur1avousdejouer, nil, window, @tailletext); sdl_flip(window);end;
+                2 : begin sdl_blitsurface(joueur2avousdejouer, nil, window, @tailletext); sdl_flip(window);end;
+            end;
+            end
+            else
+            repetitionaffichage:=false;
+        end;
+
+        if vf=true then
+        begin
+                tab[x2tab,y2tab]:=p1;
+                tab[xtab,ytab]:='vide';
+                if ((p1='pionn') and (y2tab=8)) then
+                begin
+                    tailletext.x:=80;
+                    tailletext.y:=500;
+                    sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+                    sdl_blitsurface(quellepiecevoulezvouschoisir, nil, window, @tailletext);sdl_flip(window);
+                    sdl_quit();
+                    writeln('Quelle piece voulez vous choisir ?');
+                    writeln('   - t=tour');
+                    writeln('   - c=cavalier');
+                    writeln('   - f=fou');
+                    writeln('   - R=reine');
+                    repeat
+                    readln(piecechoisie);
+                    if not ( (piecechoisie='t') or (piecechoisie='c') or (piecechoisie='f') or (piecechoisie='R') ) then
+                    begin
+                    gotoxy(1,6);write('                                                                                                                                                                    ');
+                    gotoxy(1,6);
+                    end;
+                    until ( (piecechoisie='t') or (piecechoisie='c') or (piecechoisie='f') or (piecechoisie='R') );
+                    case piecechoisie of
+                        't' : tab[x2tab,y2tab]:='tourn';
+                        'c' : tab[x2tab,y2tab]:='cavaliern';
+                        'f' : tab[x2tab,y2tab]:='foun';
+                        'R' : tab[x2tab,y2tab]:='reinen';
+                    end;
+                    window :=sdl_setvideomode(surfacelargeur, surfacelongueur, 32, sdl_swsurface);
+                    loadimage();
+                    damier();
+                    affichage();
+                    sdl_flip(window);
+                end;
+                if ((p1='pionb') and (y2tab=1)) then
+                begin
+                    tailletext.x:=80;
+                    tailletext.y:=500;
+                    sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+                    sdl_blitsurface(quellepiecevoulezvouschoisir, nil, window, @tailletext);sdl_flip(window);
+                    sdl_blitsurface(quellepiecevoulezvouschoisir, nil, window, @tailletext);sdl_flip(window);
+                    sdl_quit();
+                    writeln('Quelle piece voulez vous choisir ?');
+                    writeln('   - t=tour');
+                    writeln('   - c=cavalier');
+                    writeln('   - f=fou');
+                    writeln('   - R=reine');
+                    repeat
+                    readln(piecechoisie);
+                    if not ( (piecechoisie='t') or (piecechoisie='c') or (piecechoisie='f') or (piecechoisie='R') ) then
+                    begin
+                    gotoxy(1,6);write('                                                                                                                                                                    ');
+                    gotoxy(1,6);
+                    end;
+                    until ( (piecechoisie='t') or (piecechoisie='c') or (piecechoisie='f') or (piecechoisie='R') );
+                    case piecechoisie of
+                        't' : tab[x2tab,y2tab]:='tourb';
+                        'c' : tab[x2tab,y2tab]:='cavalierb';
+                        'f' : tab[x2tab,y2tab]:='foub';
+                        'R' : tab[x2tab,y2tab]:='reineb';
+                    end;
+                    window :=sdl_setvideomode(surfacelargeur, surfacelongueur, 32, sdl_swsurface);
+                    loadimage();
+                    damier();
+                    affichage();
+                    sdl_flip(window);
+                end;
+
+                echek(a,echec);
+
+                if echec=false then
+                begin
+                    if p1='tourb' then
+                        begin
+                        if (x2tab=1)and(y2tab=8) then
+                            begin t1:=t1+1 end;
+                        if (x2tab=8)and(y2tab=8) then
+                            begin t11:=t11+1 end;
+                        end;
+                    if p1='tourn' then
+                        begin
+                        if (x2tab=1)and(y2tab=1) then
+                            begin t2:=t2+1 end;
+                        if (x2tab=8)and(y2tab=1) then
+                            begin t22:=t22+1 end;
+                        end;
+                    if p1='roib' then
+                        begin r1:=r1+1 end;
+                    if p1='roin' then
+                        begin r2:=r2+1 end;
+                    prise_en_passant(xtab,x2tab,ytab,y2tab,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0);
+                    if (a=1)and(p1='pionb')and(prise_en_passant0=true)and(compteur>=3) then
+                        begin tab[x6tab,y6tab]:='vide' end;
+                    if (a=2)and(p1='pionn')and(prise_en_passant0=true)and(compteur>=3) then
+                        begin tab[x5tab,y5tab]:='vide' end;
+                    affichage();
+                    cste:=2;
+                    if a=1 then delay11:=delay11+delay1+1;
+                    if a=2 then delay22:=delay22+delay2+1;
+                    tailletext.x:=80;
+                    tailletext.y:=500;
+                    sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+                    case a of
+                        1 : begin a:=2;sdl_blitsurface(joueur2avousdejouer, nil, window, @tailletext); sdl_flip(window);end;
+                        2 : begin a:=1;sdl_blitsurface(joueur1avousdejouer, nil, window, @tailletext); sdl_flip(window);end;
+                    end;
+                    compteur:=compteur+1;
+                end; //end echec=false
+
+                if echec=true then
+                begin
+                        tailletext.x:=80;
+                        tailletext.y:=500;
+                        sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+                        sdl_blitsurface(deplacementnonvalidevousdevezprotegervotreroi, nil, window, @tailletext);sdl_flip(window);
+                        sdl_delay(1000);
+                        sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+                        if a=1 then begin sdl_blitsurface(joueur1avousdejouer, nil, window, @tailletext); sdl_flip(window);end;
+                        if a=2 then begin sdl_blitsurface(joueur2avousdejouer, nil, window, @tailletext); sdl_flip(window);end;
+                        tab[xtab,ytab]:=p1;
+                        tab[x2tab,y2tab]:=p2;
+                        cste:=2;
+
+                        affichage();sdl_flip(window);
+
+                end; //end echec=true
+
+            end; //end vf=true
+        damier();
+        affichage();sdl_flip(window);
+        cursor.y:=ycursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+    end; //fin procedure
 
 procedure echekmat(a : integer; var echecmat : boolean);
 var xtab,ytab,x2tab,y2tab : integer;
@@ -2515,661 +2534,791 @@ end; //end roc
 			end;
 end;
 
-procedure deplacement(tempsdebase1,tempsdebase2,temps_debut_program : integer ; var t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,delay11,delay22,tps_initial1,tps_initial2,x,y,cste,a,r1,r2,t1,t11,t2,t22,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,compteur : integer; var p1,p2,p3,p4 : string; var echecmat,prise_en_passant0,wsh1,wsh2,echec,vf,selectionimpossible: boolean);
-	var xtab,ytab : integer;
-		changementdepion,repetitionaffichage,roque,vfvf: boolean;
+procedure deplacement(tempsdebase1,tempsdebase2,temps_debut_program : integer ; var t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,delay11,delay22,tps_initial1,tps_initial2,x,y,cste,a,r1,r2,t1,t11,t2,t22,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,compteur : integer; var p1,p2,p3,p4 : string; var echecmat,prise_en_passant0,echec,vf,selectionimpossible: boolean);
+    var xtab,ytab : integer;
+        changementdepion,repetitionaffichage,roque,vfvf,memoire: boolean;
+        stringg : string;
 begin
-	selectionimpossible:=false;
-	cste:=0;
-	xtab:=(((x-1)div 4)+1) ; ytab:=(((y-1)div 2)+1);
-	p1:=tab[xtab,ytab];
-	{assurer que le joueur a choisi une de ses pièces} 
-	{si c'est le tour du joueur 1}
-	
-	if  ( (a=1) and ((p1= 'tourb')or (p1='foub')or (p1='cavalierb')or (p1='roib')or (p1='reineb')or (p1='pionb') )) or 
-	
-	{si c'est le joueur 2}
+    selectionimpossible:=false;
+    cste:=0;
+    xtab:=((x+2)div 4) ; ytab:=(y div 2);
+    p1:=tab[xtab,ytab];
+    {assurer que le joueur a choisi une de ses pièces}
+    {si c'est le tour du joueur 1}
 
-	 ( (a=2) and ((p1= 'tourn')or (p1='foun')or (p1='cavaliern')or (p1='roin') or (p1='reinen') or (p1='pionn') ) ) then 
-	
-	begin
-	
-		case a of
-			1 : begin p3:=p1; x3tab:=xtab; y3tab:=ytab end;
-			2 : begin p4:=p1; x4tab:=xtab; y4tab:=ytab end;
-		end;
-	
-		tailletext.x:=80;
-		tailletext.y:=500;
-		sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-		sdl_blitsurface(ouvoulezvousdeplacervotrepiece, nil, window, @tailletext);sdl_flip(window);
-		affichage_deplacement(p1,p3,p4,a,xtab,ytab,x3tab,x4tab,x5tab,x6tab,vf);
-		repetitionaffichage:=false;
-	{curseur 2}
-	repeat
-	
-	if repetitionaffichage=false then
-		begin affichage_deplacement(p1,p3,p4,a,xtab,ytab,x3tab,x4tab,x5tab,x6tab,vf); repetitionaffichage:=true; end;
-		
-	IF SDL_POLLEVENT(test_event)=1 THEN
-	BEGIN
-	
-		CASE test_event^.type_ OF
-		
-		SDL_KEYDOWN: BEGIN
+    if  ( (a=1) and ((p1= 'tourb')or (p1='foub')or (p1='cavalierb')or (p1='roib')or (p1='reineb')or (p1='pionb') )) or
+
+    {si c'est le joueur 2}
+
+     ( (a=2) and ((p1= 'tourn')or (p1='foun')or (p1='cavaliern')or (p1='roin') or (p1='reinen') or (p1='pionn') ) ) then
+
+    begin
+
+        case a of
+            1 : begin p3:=p1; x3tab:=xtab; y3tab:=ytab end;
+            2 : begin p4:=p1; x4tab:=xtab; y4tab:=ytab end;
+        end;
+
+        tailletext.x:=80;
+        tailletext.y:=500;
+        sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+        sdl_blitsurface(ouvoulezvousdeplacervotrepiece, nil, window, @tailletext);sdl_flip(window);
+        affichage_deplacement(p1,p3,p4,a,xtab,ytab,x3tab,x4tab,x5tab,x6tab,vf);
+        repetitionaffichage:=false;
+    {curseur 2}
+    repeat
+
+    if repetitionaffichage=false then
+        begin affichage_deplacement(p1,p3,p4,a,xtab,ytab,x3tab,x4tab,x5tab,x6tab,vf); repetitionaffichage:=true; end;
+    sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+    IF SDL_POLLEVENT(test_event)=1 THEN
+    BEGIN
+
+        CASE test_event^.type_ OF
+
+        SDL_KEYDOWN: BEGIN
                     {SDLKey 27 = ESCAPE}
-                     
+
                      case test_event^.key.keysym.sym of
-						273 : 	begin 
-								
-								case (y div 2) of 
-								1, 3, 5, 7 :case (((x-2) div 4)+1) of 
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window); end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											end;
-								2, 4, 6, 8 :case (((x-2) div 4)+1) of
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											end;
-		
-								end;
-								deplacementvalide(xtab,(x+2) div 4,ytab,y div 2,a,p1,vf,roque);
-								if vf=true then
-									begin
-									sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
-									end;
-								begin //roque
-								roque:=false;
+                        273 :   begin
+
+                                case (y div 2) of
+                                1, 3, 5, 7 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window); end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+                                2, 4, 6, 8 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+
+                                end;
+                                deplacementvalide(xtab,(x+2) div 4,ytab,y div 2,a,p1,vf,roque);
+                                if vf=true then
+                                    begin
+                                    sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
+                                    if ((a=1)and( (tab[(x+2)div 4,y div 2]='pionn')or(tab[(x+2)div 4,y div 2]='tourn')or(tab[(x+2)div 4,y div 2]='cavaliern')or(tab[(x+2)div 4,y div 2]='foun')or(tab[(x+2)div 4,y div 2]='reinen'))) or ((a=2)and( (tab[(x+2)div 4,y div 2]='pionb')or(tab[(x+2)div 4,y div 2]='tourb')or(tab[(x+2)div 4,y div 2]='cavalierb')or(tab[(x+2)div 4,y div 2]='foub')or(tab[(x+2)div 4,y div 2]='reineb'))) then
+                                    sdl_blitsurface(curseurbleu,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                begin //roque
+
+                                roque:=false;
 vfvf:=false;
 if p1='roib' then
-	begin
-		if ( (tab[5,8]='roib')and(tab[1,8]='tourb')and(t1=0)and(r1=0)and((x+2) div 4=3)and(y div 2=8)and(tab[2,8]='vide')and(tab[3,8]='vide')and(tab[4,8]='vide') ) then
-			begin
-			tab[4,8]:='roib';
-			tab[5,8]:='vide';
-			echek(a,echec);
-			tab[4,8]:='vide';
-			tab[5,8]:='roib';
-			if echec=false then
-				begin
-				tab[3,8]:='roib';
-				tab[5,8]:='vide';
-				echek(a,echec);
-				tab[3,8]:='vide';
-				tab[5,8]:='roib';
-				if ( (echec=false)and(r1=0)and(t1=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-		if ( (tab[5,8]='roib')and(tab[8,8]='tourb')and(t11=0)and(r1=0)and((x+2) div 4=7)and(y div 2=8)and(tab[6,8]='vide')and(tab[7,8]='vide') )then
-			begin
-			tab[6,8]:='roib';
-			tab[5,8]:='vide';
-			echek(a,echec);
-			tab[5,8]:='roib';
-			tab[6,8]:='vide';
-			if echec=false then
-				begin
-				tab[7,8]:='roib';
-				tab[5,8]:='vide';
-				echek(a,echec);
-				tab[7,8]:='vide';
-				tab[5,8]:='roib';
-				if ( (echec=false)and(r1=0)and(t11=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-	end;
+    begin
+        if ( (tab[5,8]='roib')and(tab[1,8]='tourb')and(t1=0)and(r1=0)and((x+2) div 4=3)and(y div 2=8)and(tab[2,8]='vide')and(tab[3,8]='vide')and(tab[4,8]='vide') ) then
+            begin
+            tab[4,8]:='roib';
+            tab[5,8]:='vide';
+            echek(a,echec);
+            tab[4,8]:='vide';
+            tab[5,8]:='roib';
+            if echec=false then
+                begin
+                tab[3,8]:='roib';
+                tab[5,8]:='vide';
+                echek(a,echec);
+                tab[3,8]:='vide';
+                tab[5,8]:='roib';
+                if ( (echec=false)and(r1=0)and(t1=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+        if ( (tab[5,8]='roib')and(tab[8,8]='tourb')and(t11=0)and(r1=0)and((x+2) div 4=7)and(y div 2=8)and(tab[6,8]='vide')and(tab[7,8]='vide') )then
+            begin
+            tab[6,8]:='roib';
+            tab[5,8]:='vide';
+            echek(a,echec);
+            tab[5,8]:='roib';
+            tab[6,8]:='vide';
+            if echec=false then
+                begin
+                tab[7,8]:='roib';
+                tab[5,8]:='vide';
+                echek(a,echec);
+                tab[7,8]:='vide';
+                tab[5,8]:='roib';
+                if ( (echec=false)and(r1=0)and(t11=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+    end;
 
 if p1='roin' then
-	begin
-		if ( (tab[5,1]='roin')and(tab[1,1]='tourn')and(t2=0)and(r2=0)and((x+2) div 4=3)and(y div 2=1)and(tab[2,1]='vide')and(tab[3,1]='vide')and(tab[4,1]='vide') ) then
-			begin
+    begin
+        if ( (tab[5,1]='roin')and(tab[1,1]='tourn')and(t2=0)and(r2=0)and((x+2) div 4=3)and(y div 2=1)and(tab[2,1]='vide')and(tab[3,1]='vide')and(tab[4,1]='vide') ) then
+            begin
 
-			tab[4,1]:='roin';
-			tab[5,1]:='vide';
-			echek(a,echec);
-			tab[4,1]:='vide';
-			tab[5,1]:='roin';
-			if echec=false then
-				begin
-				tab[3,1]:='roin';
-				tab[5,1]:='vide';
-				echek(a,echec);
-				tab[3,1]:='vide';
-				tab[5,1]:='roin';
+            tab[4,1]:='roin';
+            tab[5,1]:='vide';
+            echek(a,echec);
+            tab[4,1]:='vide';
+            tab[5,1]:='roin';
+            if echec=false then
+                begin
+                tab[3,1]:='roin';
+                tab[5,1]:='vide';
+                echek(a,echec);
+                tab[3,1]:='vide';
+                tab[5,1]:='roin';
 
-				if ( (echec=false)and(r2=0)and(t2=0) ) then
-					begin
-					
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
+                if ( (echec=false)and(r2=0)and(t2=0) ) then
+                    begin
 
-		if ( (tab[5,1]='roin')and(tab[8,1]='tourn')and(t22=0)and(r2=0)and((x+2) div 4=7)and(y div 2=1)and(tab[6,1]='vide')and(tab[7,1]='vide') )then
-			begin
-			tab[6,1]:='roin';
-			tab[5,1]:='vide';
-			echek(a,echec);
-			tab[6,1]:='vide';
-			tab[5,1]:='roin';
-			if echec=false then
-				begin
-				tab[7,1]:='roin';
-				tab[5,1]:='vide';
-				echek(a,echec);
-				tab[7,1]:='vide';
-				tab[5,1]:='roin';
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
 
-				if ( (echec=false)and(r2=0)and(t22=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-	end;
+        if ( (tab[5,1]='roin')and(tab[8,1]='tourn')and(t22=0)and(r2=0)and((x+2) div 4=7)and(y div 2=1)and(tab[6,1]='vide')and(tab[7,1]='vide') )then
+            begin
+            tab[6,1]:='roin';
+            tab[5,1]:='vide';
+            echek(a,echec);
+            tab[6,1]:='vide';
+            tab[5,1]:='roin';
+            if echec=false then
+                begin
+                tab[7,1]:='roin';
+                tab[5,1]:='vide';
+                echek(a,echec);
+                tab[7,1]:='vide';
+                tab[5,1]:='roin';
+
+                if ( (echec=false)and(r2=0)and(t22=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+    end;
 
 if vfvf=true then roque:=true;
 if roque=true then vf:=true;
-								end;//end roque
-								if roque=true then
-									begin
-									sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
-									end;
-								prise_en_passant(xtab,(x+2) div 4,ytab,y div 2,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0);
-								if prise_en_passant0=true then
-									begin
-									sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
-									end;
-								echek(a,echec);
-								if (echec=true)and(vf=true) then
-									begin
-									sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
-									end;
-								if (((x+2) div 4)=xtab)and((y div 2)=ytab) then
-									begin
-									sdl_blitsurface(curseurjaune,nil, window,@cursor);sdl_flip(window);
-									end;
-								ycursor:=ycursor-imagelongueur;
-								y:=y-2; 
-								if ycursor=1-imagelongueur then ycursor:=1;
-								if y=0 then y:=2;		
-								cursor.y:=ycursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
-								end;
-						274 : 	begin 
-								
-								case (y div 2) of 
-								1, 3, 5, 7 :case (((x-2) div 4)+1) of 
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											end;
-								2, 4, 6, 8 :case (((x-2) div 4)+1) of
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											end;
-		
-								end;
-								deplacementvalide(xtab,(x+2) div 4,ytab,y div 2,a,p1,vf,roque);
-								if vf=true then
-									begin
-									sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
-									end;
-								begin //roque
-								roque:=false;
+                                end;//end roque
+                                if roque=true then
+                                    begin
+                                    sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                prise_en_passant(xtab,(x+2) div 4,ytab,y div 2,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0);
+                                if prise_en_passant0=true then
+                                    begin
+                                    sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                echek(a,echec);
+                                memoire:=echec;
+                                if (echec=false)and(vf=true) then
+                                begin
+                                tab[xtab,ytab]:='vide';
+                                stringg:=tab[(x+2)div 4,y div 2];
+                                    tab[(x+2)div 4,y div 2]:=p1;
+                                    echek(a,echec);
+                                    if echec=true then
+                                        begin
+                                        sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
+                                        end;
+                                    tab[xtab,ytab]:=p1;
+                                    tab[(x+2)div 4,y div 2]:=stringg;
+
+                                end;
+                                echec:=memoire;
+                                if (echec=true)and(vf=true) then
+                                    begin
+                                    sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
+                                    //
+                                    tab[xtab,ytab]:='vide';
+                                    stringg:=tab[(x+2)div 4,y div 2];
+                                    tab[(x+2)div 4,y div 2]:=p1;
+                                    echek(a,echec);
+                                    if echec=false then
+                                        begin
+                                        sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
+                                        if ((a=1)and( (stringg='pionn')or(stringg='tourn')or(stringg='cavaliern')or(stringg='foun')or(stringg='reinen'))) or ((a=2)and( (stringg='pionb')or(stringg='tourb')or(stringg='cavalierb')or(stringg='foub')or(stringg='reineb'))) then
+                                        begin sdl_blitsurface(curseurbleu,nil, window,@cursor);sdl_flip(window); end;
+                                        end;
+                                    tab[xtab,ytab]:=p1;
+                                    tab[(x+2)div 4,y div 2]:=stringg;
+                                    end;
+                                if (((x+2) div 4)=xtab)and((y div 2)=ytab) then
+                                    begin
+                                    sdl_blitsurface(curseurjaune,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                ycursor:=ycursor-imagelongueur;
+                                y:=y-2;
+                                if ycursor=1-imagelongueur then ycursor:=1;
+                                if y=0 then y:=2;
+                                cursor.y:=ycursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+                                end;
+                        274 :   begin
+
+                                case (y div 2) of
+                                1, 3, 5, 7 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window); end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+                                2, 4, 6, 8 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+
+                                end;
+                                deplacementvalide(xtab,(x+2) div 4,ytab,y div 2,a,p1,vf,roque);
+                                if vf=true then
+                                    begin
+                                    sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
+                                    if ((a=1)and( (tab[(x+2)div 4,y div 2]='pionn')or(tab[(x+2)div 4,y div 2]='tourn')or(tab[(x+2)div 4,y div 2]='cavaliern')or(tab[(x+2)div 4,y div 2]='foun')or(tab[(x+2)div 4,y div 2]='reinen'))) or ((a=2)and( (tab[(x+2)div 4,y div 2]='pionb')or(tab[(x+2)div 4,y div 2]='tourb')or(tab[(x+2)div 4,y div 2]='cavalierb')or(tab[(x+2)div 4,y div 2]='foub')or(tab[(x+2)div 4,y div 2]='reineb'))) then
+                                    sdl_blitsurface(curseurbleu,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                begin //roque
+
+                                roque:=false;
 vfvf:=false;
 if p1='roib' then
-	begin
-		if ( (tab[5,8]='roib')and(tab[1,8]='tourb')and(t1=0)and(r1=0)and((x+2) div 4=3)and(y div 2=8)and(tab[2,8]='vide')and(tab[3,8]='vide')and(tab[4,8]='vide') ) then
-			begin
-			tab[4,8]:='roib';
-			tab[5,8]:='vide';
-			echek(a,echec);
-			tab[4,8]:='vide';
-			tab[5,8]:='roib';
-			if echec=false then
-				begin
-				tab[3,8]:='roib';
-				tab[5,8]:='vide';
-				echek(a,echec);
-				tab[3,8]:='vide';
-				tab[5,8]:='roib';
-				if ( (echec=false)and(r1=0)and(t1=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-		if ( (tab[5,8]='roib')and(tab[8,8]='tourb')and(t11=0)and(r1=0)and((x+2) div 4=7)and(y div 2=8)and(tab[6,8]='vide')and(tab[7,8]='vide') )then
-			begin
-			tab[6,8]:='roib';
-			tab[5,8]:='vide';
-			echek(a,echec);
-			tab[5,8]:='roib';
-			tab[6,8]:='vide';
-			if echec=false then
-				begin
-				tab[7,8]:='roib';
-				tab[5,8]:='vide';
-				echek(a,echec);
-				tab[7,8]:='vide';
-				tab[5,8]:='roib';
-				if ( (echec=false)and(r1=0)and(t11=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-	end;
+    begin
+        if ( (tab[5,8]='roib')and(tab[1,8]='tourb')and(t1=0)and(r1=0)and((x+2) div 4=3)and(y div 2=8)and(tab[2,8]='vide')and(tab[3,8]='vide')and(tab[4,8]='vide') ) then
+            begin
+            tab[4,8]:='roib';
+            tab[5,8]:='vide';
+            echek(a,echec);
+            tab[4,8]:='vide';
+            tab[5,8]:='roib';
+            if echec=false then
+                begin
+                tab[3,8]:='roib';
+                tab[5,8]:='vide';
+                echek(a,echec);
+                tab[3,8]:='vide';
+                tab[5,8]:='roib';
+                if ( (echec=false)and(r1=0)and(t1=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+        if ( (tab[5,8]='roib')and(tab[8,8]='tourb')and(t11=0)and(r1=0)and((x+2) div 4=7)and(y div 2=8)and(tab[6,8]='vide')and(tab[7,8]='vide') )then
+            begin
+            tab[6,8]:='roib';
+            tab[5,8]:='vide';
+            echek(a,echec);
+            tab[5,8]:='roib';
+            tab[6,8]:='vide';
+            if echec=false then
+                begin
+                tab[7,8]:='roib';
+                tab[5,8]:='vide';
+                echek(a,echec);
+                tab[7,8]:='vide';
+                tab[5,8]:='roib';
+                if ( (echec=false)and(r1=0)and(t11=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+    end;
 
 if p1='roin' then
-	begin
-		if ( (tab[5,1]='roin')and(tab[1,1]='tourn')and(t2=0)and(r2=0)and((x+2) div 4=3)and(y div 2=1)and(tab[2,1]='vide')and(tab[3,1]='vide')and(tab[4,1]='vide') ) then
-			begin
+    begin
+        if ( (tab[5,1]='roin')and(tab[1,1]='tourn')and(t2=0)and(r2=0)and((x+2) div 4=3)and(y div 2=1)and(tab[2,1]='vide')and(tab[3,1]='vide')and(tab[4,1]='vide') ) then
+            begin
 
-			tab[4,1]:='roin';
-			tab[5,1]:='vide';
-			echek(a,echec);
-			tab[4,1]:='vide';
-			tab[5,1]:='roin';
-			if echec=false then
-				begin
-				tab[3,1]:='roin';
-				tab[5,1]:='vide';
-				echek(a,echec);
-				tab[3,1]:='vide';
-				tab[5,1]:='roin';
+            tab[4,1]:='roin';
+            tab[5,1]:='vide';
+            echek(a,echec);
+            tab[4,1]:='vide';
+            tab[5,1]:='roin';
+            if echec=false then
+                begin
+                tab[3,1]:='roin';
+                tab[5,1]:='vide';
+                echek(a,echec);
+                tab[3,1]:='vide';
+                tab[5,1]:='roin';
 
-				if ( (echec=false)and(r2=0)and(t2=0) ) then
-					begin
-					
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
+                if ( (echec=false)and(r2=0)and(t2=0) ) then
+                    begin
 
-		if ( (tab[5,1]='roin')and(tab[8,1]='tourn')and(t22=0)and(r2=0)and((x+2) div 4=7)and(y div 2=1)and(tab[6,1]='vide')and(tab[7,1]='vide') )then
-			begin
-			tab[6,1]:='roin';
-			tab[5,1]:='vide';
-			echek(a,echec);
-			tab[6,1]:='vide';
-			tab[5,1]:='roin';
-			if echec=false then
-				begin
-				tab[7,1]:='roin';
-				tab[5,1]:='vide';
-				echek(a,echec);
-				tab[7,1]:='vide';
-				tab[5,1]:='roin';
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
 
-				if ( (echec=false)and(r2=0)and(t22=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-	end;
+        if ( (tab[5,1]='roin')and(tab[8,1]='tourn')and(t22=0)and(r2=0)and((x+2) div 4=7)and(y div 2=1)and(tab[6,1]='vide')and(tab[7,1]='vide') )then
+            begin
+            tab[6,1]:='roin';
+            tab[5,1]:='vide';
+            echek(a,echec);
+            tab[6,1]:='vide';
+            tab[5,1]:='roin';
+            if echec=false then
+                begin
+                tab[7,1]:='roin';
+                tab[5,1]:='vide';
+                echek(a,echec);
+                tab[7,1]:='vide';
+                tab[5,1]:='roin';
+
+                if ( (echec=false)and(r2=0)and(t22=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+    end;
 
 if vfvf=true then roque:=true;
 if roque=true then vf:=true;
-								end;//roque end
-								if roque=true then
-									begin
-									sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
-									end;
-									prise_en_passant(xtab,(x+2) div 4,ytab,y div 2,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0);
-								if prise_en_passant0=true then
-									begin
-									sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
-									end;
-								echek(a,echec);
-								if (echec=true)and(vf=true) then
-									begin
-									sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
-									end;
-								if (((x+2) div 4)=xtab)and((y div 2)=ytab) then
-									begin
-									sdl_blitsurface(curseurjaune,nil, window,@cursor);sdl_flip(window);
-									end;
-								ycursor:=ycursor+imagelongueur;
-								y:=y+2;
-								if ycursor=1+8*imagelongueur then ycursor:=1+7*imagelongueur;
-								if y=18 then y:=16;
-								 
-								
-								cursor.y:=ycursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
-								end;
-						 
-						276 : 	begin 
-								case (y div 2) of 
-								1, 3, 5, 7 :case (((x-2) div 4)+1) of 
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											end;
-								2, 4, 6, 8 :case (((x-2) div 4)+1) of
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											end;
-		
-								end;
-								deplacementvalide(xtab,(x+2) div 4,ytab,y div 2,a,p1,vf,roque);
-								if vf=true then
-									begin
-									sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
-									end;
-								begin //roque
-								roque:=false;
+                                end;//end roque
+                                if roque=true then
+                                    begin
+                                    sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                prise_en_passant(xtab,(x+2) div 4,ytab,y div 2,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0);
+                                if prise_en_passant0=true then
+                                    begin
+                                    sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                echek(a,echec);
+                                memoire:=echec;
+                                if (echec=false)and(vf=true) then
+                                begin
+                                tab[xtab,ytab]:='vide';
+                                stringg:=tab[(x+2)div 4,y div 2];
+                                    tab[(x+2)div 4,y div 2]:=p1;
+                                    echek(a,echec);
+                                    if echec=true then
+                                        begin
+                                        sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
+                                        end;
+                                    tab[xtab,ytab]:=p1;
+                                    tab[(x+2)div 4,y div 2]:=stringg;
+
+                                end;
+                                echec:=memoire;
+                                if (echec=true)and(vf=true) then
+                                    begin
+                                    sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
+                                    //
+                                    tab[xtab,ytab]:='vide';
+                                    stringg:=tab[(x+2)div 4,y div 2];
+                                    tab[(x+2)div 4,y div 2]:=p1;
+                                    echek(a,echec);
+                                    if echec=false then
+                                        begin
+                                        sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
+                                        if ((a=1)and( (stringg='pionn')or(stringg='tourn')or(stringg='cavaliern')or(stringg='foun')or(stringg='reinen'))) or ((a=2)and( (stringg='pionb')or(stringg='tourb')or(stringg='cavalierb')or(stringg='foub')or(stringg='reineb'))) then
+                                        sdl_blitsurface(curseurbleu,nil, window,@cursor);sdl_flip(window);
+                                        end;
+                                    tab[xtab,ytab]:=p1;
+                                    tab[(x+2)div 4,y div 2]:=stringg;
+                                    end;
+                                if (((x+2) div 4)=xtab)and((y div 2)=ytab) then
+                                    begin
+                                    sdl_blitsurface(curseurjaune,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                ycursor:=ycursor+imagelongueur;
+                                y:=y+2;
+                                if ycursor=1+8*imagelongueur then ycursor:=1+7*imagelongueur;
+                                if y=18 then y:=16;
+
+
+                                cursor.y:=ycursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+                                end;
+
+                        276 :   begin
+                                case (y div 2) of
+                                1, 3, 5, 7 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window); end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+                                2, 4, 6, 8 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+
+                                end;
+                                deplacementvalide(xtab,(x+2) div 4,ytab,y div 2,a,p1,vf,roque);
+                                if vf=true then
+                                    begin
+                                    sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
+                                    if ((a=1)and( (tab[(x+2)div 4,y div 2]='pionn')or(tab[(x+2)div 4,y div 2]='tourn')or(tab[(x+2)div 4,y div 2]='cavaliern')or(tab[(x+2)div 4,y div 2]='foun')or(tab[(x+2)div 4,y div 2]='reinen'))) or ((a=2)and( (tab[(x+2)div 4,y div 2]='pionb')or(tab[(x+2)div 4,y div 2]='tourb')or(tab[(x+2)div 4,y div 2]='cavalierb')or(tab[(x+2)div 4,y div 2]='foub')or(tab[(x+2)div 4,y div 2]='reineb'))) then
+                                    sdl_blitsurface(curseurbleu,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                begin //roque
+
+                                roque:=false;
 vfvf:=false;
 if p1='roib' then
-	begin
-		if ( (tab[5,8]='roib')and(tab[1,8]='tourb')and(t1=0)and(r1=0)and((x+2) div 4=3)and(y div 2=8)and(tab[2,8]='vide')and(tab[3,8]='vide')and(tab[4,8]='vide') ) then
-			begin
-			tab[4,8]:='roib';
-			tab[5,8]:='vide';
-			echek(a,echec);
-			tab[4,8]:='vide';
-			tab[5,8]:='roib';
-			if echec=false then
-				begin
-				tab[3,8]:='roib';
-				tab[5,8]:='vide';
-				echek(a,echec);
-				tab[3,8]:='vide';
-				tab[5,8]:='roib';
-				if ( (echec=false)and(r1=0)and(t1=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-		if ( (tab[5,8]='roib')and(tab[8,8]='tourb')and(t11=0)and(r1=0)and((x+2) div 4=7)and(y div 2=8)and(tab[6,8]='vide')and(tab[7,8]='vide') )then
-			begin
-			tab[6,8]:='roib';
-			tab[5,8]:='vide';
-			echek(a,echec);
-			tab[5,8]:='roib';
-			tab[6,8]:='vide';
-			if echec=false then
-				begin
-				tab[7,8]:='roib';
-				tab[5,8]:='vide';
-				echek(a,echec);
-				tab[7,8]:='vide';
-				tab[5,8]:='roib';
-				if ( (echec=false)and(r1=0)and(t11=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-	end;
+    begin
+        if ( (tab[5,8]='roib')and(tab[1,8]='tourb')and(t1=0)and(r1=0)and((x+2) div 4=3)and(y div 2=8)and(tab[2,8]='vide')and(tab[3,8]='vide')and(tab[4,8]='vide') ) then
+            begin
+            tab[4,8]:='roib';
+            tab[5,8]:='vide';
+            echek(a,echec);
+            tab[4,8]:='vide';
+            tab[5,8]:='roib';
+            if echec=false then
+                begin
+                tab[3,8]:='roib';
+                tab[5,8]:='vide';
+                echek(a,echec);
+                tab[3,8]:='vide';
+                tab[5,8]:='roib';
+                if ( (echec=false)and(r1=0)and(t1=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+        if ( (tab[5,8]='roib')and(tab[8,8]='tourb')and(t11=0)and(r1=0)and((x+2) div 4=7)and(y div 2=8)and(tab[6,8]='vide')and(tab[7,8]='vide') )then
+            begin
+            tab[6,8]:='roib';
+            tab[5,8]:='vide';
+            echek(a,echec);
+            tab[5,8]:='roib';
+            tab[6,8]:='vide';
+            if echec=false then
+                begin
+                tab[7,8]:='roib';
+                tab[5,8]:='vide';
+                echek(a,echec);
+                tab[7,8]:='vide';
+                tab[5,8]:='roib';
+                if ( (echec=false)and(r1=0)and(t11=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+    end;
 
 if p1='roin' then
-	begin
-		if ( (tab[5,1]='roin')and(tab[1,1]='tourn')and(t2=0)and(r2=0)and((x+2) div 4=3)and(y div 2=1)and(tab[2,1]='vide')and(tab[3,1]='vide')and(tab[4,1]='vide') ) then
-			begin
+    begin
+        if ( (tab[5,1]='roin')and(tab[1,1]='tourn')and(t2=0)and(r2=0)and((x+2) div 4=3)and(y div 2=1)and(tab[2,1]='vide')and(tab[3,1]='vide')and(tab[4,1]='vide') ) then
+            begin
 
-			tab[4,1]:='roin';
-			tab[5,1]:='vide';
-			echek(a,echec);
-			tab[4,1]:='vide';
-			tab[5,1]:='roin';
-			if echec=false then
-				begin
-				tab[3,1]:='roin';
-				tab[5,1]:='vide';
-				echek(a,echec);
-				tab[3,1]:='vide';
-				tab[5,1]:='roin';
+            tab[4,1]:='roin';
+            tab[5,1]:='vide';
+            echek(a,echec);
+            tab[4,1]:='vide';
+            tab[5,1]:='roin';
+            if echec=false then
+                begin
+                tab[3,1]:='roin';
+                tab[5,1]:='vide';
+                echek(a,echec);
+                tab[3,1]:='vide';
+                tab[5,1]:='roin';
 
-				if ( (echec=false)and(r2=0)and(t2=0) ) then
-					begin
-					
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
+                if ( (echec=false)and(r2=0)and(t2=0) ) then
+                    begin
 
-		if ( (tab[5,1]='roin')and(tab[8,1]='tourn')and(t22=0)and(r2=0)and((x+2) div 4=7)and(y div 2=1)and(tab[6,1]='vide')and(tab[7,1]='vide') )then
-			begin
-			tab[6,1]:='roin';
-			tab[5,1]:='vide';
-			echek(a,echec);
-			tab[6,1]:='vide';
-			tab[5,1]:='roin';
-			if echec=false then
-				begin
-				tab[7,1]:='roin';
-				tab[5,1]:='vide';
-				echek(a,echec);
-				tab[7,1]:='vide';
-				tab[5,1]:='roin';
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
 
-				if ( (echec=false)and(r2=0)and(t22=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-	end;
+        if ( (tab[5,1]='roin')and(tab[8,1]='tourn')and(t22=0)and(r2=0)and((x+2) div 4=7)and(y div 2=1)and(tab[6,1]='vide')and(tab[7,1]='vide') )then
+            begin
+            tab[6,1]:='roin';
+            tab[5,1]:='vide';
+            echek(a,echec);
+            tab[6,1]:='vide';
+            tab[5,1]:='roin';
+            if echec=false then
+                begin
+                tab[7,1]:='roin';
+                tab[5,1]:='vide';
+                echek(a,echec);
+                tab[7,1]:='vide';
+                tab[5,1]:='roin';
+
+                if ( (echec=false)and(r2=0)and(t22=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+    end;
 
 if vfvf=true then roque:=true;
 if roque=true then vf:=true;
-								end;//roque
-								if roque=true then
-									begin
-									sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
-									end;
-									prise_en_passant(xtab,(x+2) div 4,ytab,y div 2,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0);
-								if prise_en_passant0=true then
-									begin
-									sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
-									end;
-								echek(a,echec);
-								if (echec=true)and(vf=true) then
-									begin
-									sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
-									end;
-								if (((x+2) div 4)=xtab)and((y div 2)=ytab) then
-									begin
-									sdl_blitsurface(curseurjaune,nil, window,@cursor);sdl_flip(window);
-									end;
-								xcursor:=xcursor-imagelargeur; 
-								x:=x-4;
-								if xcursor=1-imagelargeur then xcursor:=1;
-								if x=-2 then x:=2;
-								cursor.x:=xcursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
-								end;
-						275 : 	begin 
-								case (y div 2) of 
-								1, 3, 5, 7 :case (((x-2) div 4)+1) of 
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											end;
-								2, 4, 6, 8 :case (((x-2) div 4)+1) of
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											end;
-		
-								end;
-								deplacementvalide(xtab,(x+2) div 4,ytab,y div 2,a,p1,vf,roque);
-								if vf=true then
-									begin
-									sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
-									end;
-								begin //roque
-								roque:=false;
+                                end;//end roque
+                                if roque=true then
+                                    begin
+                                    sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                prise_en_passant(xtab,(x+2) div 4,ytab,y div 2,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0);
+                                if prise_en_passant0=true then
+                                    begin
+                                    sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                echek(a,echec);
+                                memoire:=echec;
+                                if (echec=false)and(vf=true) then
+                                begin
+                                tab[xtab,ytab]:='vide';
+                                stringg:=tab[(x+2)div 4,y div 2];
+                                    tab[(x+2)div 4,y div 2]:=p1;
+                                    echek(a,echec);
+                                    if echec=true then
+                                        begin
+                                        sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
+                                        end;
+                                    tab[xtab,ytab]:=p1;
+                                    tab[(x+2)div 4,y div 2]:=stringg;
+
+                                end;
+                                echec:=memoire;
+                                if (echec=true)and(vf=true) then
+                                    begin
+                                    sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
+                                    //
+                                    tab[xtab,ytab]:='vide';
+                                    stringg:=tab[(x+2)div 4,y div 2];
+                                    tab[(x+2)div 4,y div 2]:=p1;
+                                    echek(a,echec);
+                                    if echec=false then
+                                        begin
+                                        sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
+                                        if ((a=1)and( (stringg='pionn')or(stringg='tourn')or(stringg='cavaliern')or(stringg='foun')or(stringg='reinen'))) or ((a=2)and( (stringg='pionb')or(stringg='tourb')or(stringg='cavalierb')or(stringg='foub')or(stringg='reineb'))) then
+                                        sdl_blitsurface(curseurbleu,nil, window,@cursor);sdl_flip(window);
+                                        end;
+                                    tab[xtab,ytab]:=p1;
+                                    tab[(x+2)div 4,y div 2]:=stringg;
+                                    end;
+                                if (((x+2) div 4)=xtab)and((y div 2)=ytab) then
+                                    begin
+                                    sdl_blitsurface(curseurjaune,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                xcursor:=xcursor-imagelargeur;
+                                x:=x-4;
+                                if xcursor=1-imagelargeur then xcursor:=1;
+                                if x=-2 then x:=2;
+                                cursor.x:=xcursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+                                end;
+                        275 :   begin
+                                case (y div 2) of
+                                1, 3, 5, 7 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window); end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+                                2, 4, 6, 8 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+
+                                end;
+                                deplacementvalide(xtab,(x+2) div 4,ytab,y div 2,a,p1,vf,roque);
+                                if vf=true then
+                                    begin
+                                    sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
+                                    if ((a=1)and( (tab[(x+2)div 4,y div 2]='pionn')or(tab[(x+2)div 4,y div 2]='tourn')or(tab[(x+2)div 4,y div 2]='cavaliern')or(tab[(x+2)div 4,y div 2]='foun')or(tab[(x+2)div 4,y div 2]='reinen'))) or ((a=2)and( (tab[(x+2)div 4,y div 2]='pionb')or(tab[(x+2)div 4,y div 2]='tourb')or(tab[(x+2)div 4,y div 2]='cavalierb')or(tab[(x+2)div 4,y div 2]='foub')or(tab[(x+2)div 4,y div 2]='reineb'))) then
+                                    sdl_blitsurface(curseurbleu,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                begin //roque
+
+                                roque:=false;
 vfvf:=false;
 if p1='roib' then
-	begin
-		if ( (tab[5,8]='roib')and(tab[1,8]='tourb')and(t1=0)and(r1=0)and((x+2) div 4=3)and(y div 2=8)and(tab[2,8]='vide')and(tab[3,8]='vide')and(tab[4,8]='vide') ) then
-			begin
-			tab[4,8]:='roib';
-			tab[5,8]:='vide';
-			echek(a,echec);
-			tab[4,8]:='vide';
-			tab[5,8]:='roib';
-			if echec=false then
-				begin
-				tab[3,8]:='roib';
-				tab[5,8]:='vide';
-				echek(a,echec);
-				tab[3,8]:='vide';
-				tab[5,8]:='roib';
-				if ( (echec=false)and(r1=0)and(t1=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-		if ( (tab[5,8]='roib')and(tab[8,8]='tourb')and(t11=0)and(r1=0)and((x+2) div 4=7)and(y div 2=8)and(tab[6,8]='vide')and(tab[7,8]='vide') )then
-			begin
-			tab[6,8]:='roib';
-			tab[5,8]:='vide';
-			echek(a,echec);
-			tab[5,8]:='roib';
-			tab[6,8]:='vide';
-			if echec=false then
-				begin
-				tab[7,8]:='roib';
-				tab[5,8]:='vide';
-				echek(a,echec);
-				tab[7,8]:='vide';
-				tab[5,8]:='roib';
-				if ( (echec=false)and(r1=0)and(t11=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-	end;
+    begin
+        if ( (tab[5,8]='roib')and(tab[1,8]='tourb')and(t1=0)and(r1=0)and((x+2) div 4=3)and(y div 2=8)and(tab[2,8]='vide')and(tab[3,8]='vide')and(tab[4,8]='vide') ) then
+            begin
+            tab[4,8]:='roib';
+            tab[5,8]:='vide';
+            echek(a,echec);
+            tab[4,8]:='vide';
+            tab[5,8]:='roib';
+            if echec=false then
+                begin
+                tab[3,8]:='roib';
+                tab[5,8]:='vide';
+                echek(a,echec);
+                tab[3,8]:='vide';
+                tab[5,8]:='roib';
+                if ( (echec=false)and(r1=0)and(t1=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+        if ( (tab[5,8]='roib')and(tab[8,8]='tourb')and(t11=0)and(r1=0)and((x+2) div 4=7)and(y div 2=8)and(tab[6,8]='vide')and(tab[7,8]='vide') )then
+            begin
+            tab[6,8]:='roib';
+            tab[5,8]:='vide';
+            echek(a,echec);
+            tab[5,8]:='roib';
+            tab[6,8]:='vide';
+            if echec=false then
+                begin
+                tab[7,8]:='roib';
+                tab[5,8]:='vide';
+                echek(a,echec);
+                tab[7,8]:='vide';
+                tab[5,8]:='roib';
+                if ( (echec=false)and(r1=0)and(t11=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+    end;
 
 if p1='roin' then
-	begin
-		if ( (tab[5,1]='roin')and(tab[1,1]='tourn')and(t2=0)and(r2=0)and((x+2) div 4=3)and(y div 2=1)and(tab[2,1]='vide')and(tab[3,1]='vide')and(tab[4,1]='vide') ) then
-			begin
+    begin
+        if ( (tab[5,1]='roin')and(tab[1,1]='tourn')and(t2=0)and(r2=0)and((x+2) div 4=3)and(y div 2=1)and(tab[2,1]='vide')and(tab[3,1]='vide')and(tab[4,1]='vide') ) then
+            begin
 
-			tab[4,1]:='roin';
-			tab[5,1]:='vide';
-			echek(a,echec);
-			tab[4,1]:='vide';
-			tab[5,1]:='roin';
-			if echec=false then
-				begin
-				tab[3,1]:='roin';
-				tab[5,1]:='vide';
-				echek(a,echec);
-				tab[3,1]:='vide';
-				tab[5,1]:='roin';
+            tab[4,1]:='roin';
+            tab[5,1]:='vide';
+            echek(a,echec);
+            tab[4,1]:='vide';
+            tab[5,1]:='roin';
+            if echec=false then
+                begin
+                tab[3,1]:='roin';
+                tab[5,1]:='vide';
+                echek(a,echec);
+                tab[3,1]:='vide';
+                tab[5,1]:='roin';
 
-				if ( (echec=false)and(r2=0)and(t2=0) ) then
-					begin
-					
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
+                if ( (echec=false)and(r2=0)and(t2=0) ) then
+                    begin
 
-		if ( (tab[5,1]='roin')and(tab[8,1]='tourn')and(t22=0)and(r2=0)and((x+2) div 4=7)and(y div 2=1)and(tab[6,1]='vide')and(tab[7,1]='vide') )then
-			begin
-			tab[6,1]:='roin';
-			tab[5,1]:='vide';
-			echek(a,echec);
-			tab[6,1]:='vide';
-			tab[5,1]:='roin';
-			if echec=false then
-				begin
-				tab[7,1]:='roin';
-				tab[5,1]:='vide';
-				echek(a,echec);
-				tab[7,1]:='vide';
-				tab[5,1]:='roin';
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
 
-				if ( (echec=false)and(r2=0)and(t22=0) ) then
-					begin
-					vfvf:=true;
-					roque:=true;
-					end;
-				end;
-			end;
-	end;
+        if ( (tab[5,1]='roin')and(tab[8,1]='tourn')and(t22=0)and(r2=0)and((x+2) div 4=7)and(y div 2=1)and(tab[6,1]='vide')and(tab[7,1]='vide') )then
+            begin
+            tab[6,1]:='roin';
+            tab[5,1]:='vide';
+            echek(a,echec);
+            tab[6,1]:='vide';
+            tab[5,1]:='roin';
+            if echec=false then
+                begin
+                tab[7,1]:='roin';
+                tab[5,1]:='vide';
+                echek(a,echec);
+                tab[7,1]:='vide';
+                tab[5,1]:='roin';
+
+                if ( (echec=false)and(r2=0)and(t22=0) ) then
+                    begin
+                    vfvf:=true;
+                    roque:=true;
+                    end;
+                end;
+            end;
+    end;
 
 if vfvf=true then roque:=true;
 if roque=true then vf:=true;
-								end;//roque
-								if roque=true then
-									begin
-									sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
-									end;
-								prise_en_passant(xtab,(x+2) div 4,ytab,y div 2,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0);
-								if prise_en_passant0=true then
-									begin
-									sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
-									end;
-								echek(a,echec);
-								if (echec=true)and(vf=true) then
-									begin
-									sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
-									end;
-								if (((x+2) div 4)=xtab)and((y div 2)=ytab) then
-									begin
-									sdl_blitsurface(curseurjaune,nil, window,@cursor);sdl_flip(window);
-									end;
-								xcursor:=xcursor+imagelargeur;
-								x:=x+4;
-								if xcursor=1+8*imagelargeur then xcursor:=1+7*imagelongueur;
-								if x=34 then x:=30;
-								
-								
-								cursor.x:=xcursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
-								end;
-						27  : loop:=TRUE;
-						13  : begin deplacement2(tempsdebase1,tempsdebase2, delay1,delay2,temps_debut_program,t,tt,xtab,ytab,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,r1,r2,t1,t11,t2,t22,compteur,delay11,delay22,p1,p3,p4,cste,a,vf,echec,prise_en_passant0,changementdepion,repetitionaffichage) end;
+                                end;//end roque
+                                if roque=true then
+                                    begin
+                                    sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                prise_en_passant(xtab,(x+2) div 4,ytab,y div 2,x3tab,x4tab,y4tab,x5tab,x6tab,a,p1,p3,p4,vf,prise_en_passant0);
+                                if prise_en_passant0=true then
+                                    begin
+                                    sdl_blitsurface(curseurviolet,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                echek(a,echec);
+                                memoire:=echec;
+                                if (echec=false)and(vf=true) then
+                                begin
+                                tab[xtab,ytab]:='vide';
+                                stringg:=tab[(x+2)div 4,y div 2];
+                                    tab[(x+2)div 4,y div 2]:=p1;
+                                    echek(a,echec);
+                                    if echec=true then
+                                        begin
+                                        sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
+                                        end;
+                                    tab[xtab,ytab]:=p1;
+                                    tab[(x+2)div 4,y div 2]:=stringg;
 
-						end;
-								
-                     
+                                end;
+                                echec:=memoire;
+                                if (echec=true)and(vf=true) then
+                                    begin
+                                    sdl_blitsurface(curseurvert,nil, window,@cursor);sdl_flip(window);
+                                    //
+                                    tab[xtab,ytab]:='vide';
+                                    stringg:=tab[(x+2)div 4,y div 2];
+                                    tab[(x+2)div 4,y div 2]:=p1;
+                                    echek(a,echec);
+                                    if echec=false then
+                                        begin
+                                        sdl_blitsurface(curseurrouge,nil, window,@cursor);sdl_flip(window);
+                                        if ((a=1)and( (stringg='pionn')or(stringg='tourn')or(stringg='cavaliern')or(stringg='foun')or(stringg='reinen'))) or ((a=2)and( (stringg='pionb')or(stringg='tourb')or(stringg='cavalierb')or(stringg='foub')or(stringg='reineb'))) then
+                                        sdl_blitsurface(curseurbleu,nil, window,@cursor);sdl_flip(window);
+                                        end;
+                                    tab[xtab,ytab]:=p1;
+                                    tab[(x+2)div 4,y div 2]:=stringg;
+                                    end;
+                                if (((x+2) div 4)=xtab)and((y div 2)=ytab) then
+                                    begin
+                                    sdl_blitsurface(curseurjaune,nil, window,@cursor);sdl_flip(window);
+                                    end;
+                                xcursor:=xcursor+imagelargeur;
+                                x:=x+4;
+                                if xcursor=1+8*imagelargeur then xcursor:=1+7*imagelongueur;
+                                if x=34 then x:=30;
+
+
+                                cursor.x:=xcursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+                                end;
+                        27  : loop:=TRUE;
+                        13  : begin deplacement2(tempsdebase1,tempsdebase2, delay1,delay2,temps_debut_program,t,tt,xtab,ytab,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,r1,r2,t1,t11,t2,t22,compteur,delay11,delay22,p1,p3,p4,cste,a,vf,echec,prise_en_passant0,changementdepion,repetitionaffichage) end;
+
+                        end;
+
+
                    END;
       SDL_KEYUP: ;
       SDL_MOUSEMOTION: ;
       SDL_MOUSEBUTTONDOWN: ;
       SDL_MOUSEBUTTONUP: ;
-      
+
     END;
   END
   ELSE ;
-	
-  	 timer(a,tempsdebase1,tempsdebase2,temps_debut_program,delay11,delay22,t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,tps_initial1,tps_initial2,wsh1,wsh2);
 
-	
-		
-	
+     timer(a,tempsdebase1,tempsdebase2,temps_debut_program,delay11,delay22,t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,tps_initial1,tps_initial2);
 
-		
-	until ((loop=true)or (cste=1) or (cste=2)) and (changementdepion=false);
-	end
-	else
-	selectionimpossible:=true;
+
+
+
+
+
+
+    until ((loop=true)or (cste=1) or (cste=2)) and (changementdepion=false);
+    end
+    else
+    selectionimpossible:=true;
 end;
 
 procedure menu(y : integer; var kk : tkeyevent; var newload : string);
@@ -3323,8 +3472,7 @@ k:=translatekeyevent(k);
 		case k of
 				33619751 : begin gotoxy(x,y); write(' '); gotoxy(x,y); y:=y+2; gotoxy(x,y); write('*'); end;
 				33619745 : begin gotoxy(x,y); write(' '); gotoxy(x,y); y:=y-2; gotoxy(x,y); write('*'); end; 
-				33619749 : menu(y,kk,newload);
-				7181 : menu(y,kk,newload);
+				33619749,7181 : menu(y,kk,newload);
 		end;
 		case y of
 				1 : begin gotoxy(x,y); write(' '); gotoxy(x,y); y:=3; gotoxy(x,y); write('*');end;
@@ -3368,241 +3516,235 @@ donekeyboard;
 	seconde:=0;
 	pp1:='pp1';
 	pp2:='pp2';
+	p1:=' ';
+    p2:=' ';
 	nouvellegame:=true;
 	case newload of 
 				'new'  : initialisation();
 				'load' : begin load(a,r1,r2,t1,t11,t2,t22,compteur,t,ss,tempsdebase1,tempsdebase2,delay1,delay2,minute,seconde,minute2,seconde2,constanteposition,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,x1,y1,x2,y2,pp1,pp2,p3,p4,echec);end;
 	end;
 	gettime(h,m,s,cent);
-	temps_debut_program:=(h*3600+m*60+s);
-	t:=(h*3600+m*60+s);
-	ss:=(h*3600+m*60+s);
-	tps_initial1:=60*minute+seconde;
-	tps_initial2:=60*minute2+seconde2;
-	
-	sdl_init(sdl_init_video);
-	tailletext.w:=800;
-	tailletext.h:=72;
-	window :=sdl_setvideomode(surfacelargeur, surfacelongueur, 32, sdl_swsurface);
-	loadimage();
-	damier();
-	affichage();
-	sdl_flip(window);
-	repetitionechec:=0;
-	repetitionpat:=0;
-	tailletext.x:=80;
-	tailletext.y:=500;
-	
-	sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-	if a=1 then begin sdl_blitsurface(joueur1avousdejouer, nil, window, @tailletext); p1:=pp1 end;
-	if a=2 then begin sdl_blitsurface(joueur2avousdejouer, nil, window, @tailletext); p1:=pp2 end;
-	begin{curseur}
-		xcursor:=1; cursor.x:=xcursor;
-		ycursor:=1; cursor.y:=ycursor;
-		cursor.w:=imagelargeur;
-		cursor.h:=imagelongueur;
-		x:=2;y:=2;	
-	repeat
-	timer(a,tempsdebase1,tempsdebase2,temps_debut_program,delay11,delay22,t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,tps_initial1,tps_initial2,wsh1,wsh2);
-		if (repetitionpat=0)and(vf=true) then
-		begin pat(a,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,p1,p2,pp1,pp2,constanteposition,x1,y1,x2,y2,pat0,nouvellegame); repetitionpat:=1; end;
-		if pat0=false then
-		begin
-		echek(a,echec);
-		if (echec=true)and(repetitionechec=0) then
-			begin
-				repetitionechec:=1;
-				tailletext.x:=80;
-				tailletext.y:=500;
-					sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-	
-				if a=1 then
-				sdl_blitsurface(joueur1vousetesenechec, nil, window, @tailletext);sdl_flip(window);
-				if a=2 then	
-				sdl_blitsurface(joueur2vousetesenechec, nil, window, @tailletext);sdl_flip(window);
-			end;
-		save(a,r1,r2,t1,t11,t2,t22,compteur,t,ss,tempsdebase1,tempsdebase2,delay1,delay2,minute,seconde,minute2,seconde2,constanteposition,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,x1,y1,x2,y2,pp1,pp2,p3,p4,echec);
-		sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+    temps_debut_program:=(h*3600+m*60+s);
+    t:=(h*3600+m*60+s);
+    ss:=(h*3600+m*60+s);
+    tps_initial1:=60*minute+seconde;
+    tps_initial2:=60*minute2+seconde2;
 
-		NEW(test_event);
+    sdl_init(sdl_init_video);
+    tailletext.w:=800;
+    tailletext.h:=72;
+    window :=sdl_setvideomode(surfacelargeur, surfacelongueur, 32, sdl_swsurface);
+    loadimage();
+    damier();
+    affichage();
+    sdl_flip(window);
+    repetitionechec:=0;
+    repetitionpat:=0;
+    tailletext.x:=80;
+    tailletext.y:=500;
+
+    sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+    if a=1 then begin sdl_blitsurface(joueur1avousdejouer, nil, window, @tailletext); p1:=pp1 end;
+    if a=2 then begin sdl_blitsurface(joueur2avousdejouer, nil, window, @tailletext); p1:=pp2 end;
+    begin{curseur}
+        xcursor:=1; cursor.x:=xcursor;
+        ycursor:=1; cursor.y:=ycursor;
+        cursor.w:=imagelargeur;
+        cursor.h:=imagelongueur;
+        x:=2;y:=2;
+    repeat
+    timer(a,tempsdebase1,tempsdebase2,temps_debut_program,delay11,delay22,t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,tps_initial1,tps_initial2);
+        if (repetitionpat=0)and(vf=true) then
+        begin pat(a,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,p1,p2,pp1,pp2,constanteposition,x1,y1,x2,y2,pat0,nouvellegame); repetitionpat:=1; end;
+        if pat0=false then
+        begin
+        echek(a,echec);
+        if (echec=true)and(repetitionechec=0) then
+            begin
+                repetitionechec:=1;
+                tailletext.x:=80;
+                tailletext.y:=500;
+                    sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+
+                if a=1 then
+                sdl_blitsurface(joueur1vousetesenechec, nil, window, @tailletext);sdl_flip(window);
+                if a=2 then
+                sdl_blitsurface(joueur2vousetesenechec, nil, window, @tailletext);sdl_flip(window);
+            end;
+        save(a,r1,r2,t1,t11,t2,t22,compteur,t,ss,tempsdebase1,tempsdebase2,delay1,delay2,minute,seconde,minute2,seconde2,constanteposition,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,x1,y1,x2,y2,pp1,pp2,p3,p4,echec);
+        sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+
+        NEW(test_event);
 
 
 
   IF SDL_POLLEVENT(test_event)=1 THEN
   BEGIN
-    timer(a,tempsdebase1,tempsdebase2,temps_debut_program,delay11,delay22,t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,tps_initial1,tps_initial2,wsh1,wsh2);
+    timer(a,tempsdebase1,tempsdebase2,temps_debut_program,delay11,delay22,t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,tps_initial1,tps_initial2);
 
     CASE test_event^.type_ OF
-      
-      SDL_KEYDOWN: BEGIN
-                    
-                     {SDLKey 27 = ESCAPE}
-                     
-                     case test_event^.key.keysym.sym of
-						273 : 	begin 
-								
-								case (y div 2) of 
-								1, 3, 5, 7 :case (((x-2) div 4)+1) of 
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											end;
-								2, 4, 6, 8 :case (((x-2) div 4)+1) of
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											end;
-		
-								end;
-								
-								ycursor:=ycursor-imagelongueur;
-								y:=y-2; 
-								if ycursor=1-imagelongueur then ycursor:=1;
-								if y=0 then y:=2;		
-								cursor.y:=ycursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
-								end;
-						274 : 	begin 
-								
-								case (y div 2) of 
-								1, 3, 5, 7 :case (((x-2) div 4)+1) of 
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											end;
-								2, 4, 6, 8 :case (((x-2) div 4)+1) of
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											end;
-		
-								end;
-								
-								ycursor:=ycursor+imagelongueur;
-								y:=y+2;
-								if ycursor=1+8*imagelongueur then ycursor:=1+7*imagelongueur;
-								if y=18 then y:=16;
-								 
-								
-								cursor.y:=ycursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
-								end;
-						 
-						276 : 	begin 
-								case (y div 2) of 
-								1, 3, 5, 7 :case (((x-2) div 4)+1) of 
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											end;
-								2, 4, 6, 8 :case (((x-2) div 4)+1) of
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											end;
-		
-								end;
-								
-								xcursor:=xcursor-imagelargeur; 
-								x:=x-4;
-								if xcursor=1-imagelargeur then xcursor:=1;
-								if x=-2 then x:=2;
-								cursor.x:=xcursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
-								end;
-						275 : 	begin 
-								case (y div 2) of 
-								1, 3, 5, 7 :case (((x-2) div 4)+1) of 
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											end;
-								2, 4, 6, 8 :case (((x-2) div 4)+1) of
-											1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
-											2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
-											end;
-		
-								end;
-								xcursor:=xcursor+imagelargeur;
-								x:=x+4;
-								if xcursor=1+8*imagelargeur then xcursor:=1+7*imagelargeur;
-								if x=34 then x:=30;
-								
-								
-								cursor.x:=xcursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
-								end;
-						27  : loop:=TRUE;
-						13  : begin deplacement(tempsdebase1,tempsdebase2,temps_debut_program,t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,delay11,delay22,tps_initial1,tps_initial2,x,y,cste,a,r1,r2,t1,t11,t2,t22,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,compteur,p1,p2,p3,p4,echecmat,prise_en_passant0,wsh1,wsh2,echec,vf,selectionimpossible); 
-									repetitionpat:=0; repetitionechec:=0; 
-							  end;
 
-						end;
-                     
+      SDL_KEYDOWN: BEGIN
+
+                     {SDLKey 27 = ESCAPE}
+
+                     case test_event^.key.keysym.sym of
+                        273 :   begin
+
+                                case (y div 2) of
+                                1, 3, 5, 7 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+                                2, 4, 6, 8 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+
+                                end;
+
+                                ycursor:=ycursor-imagelongueur;
+                                y:=y-2;
+                                if ycursor=1-imagelongueur then ycursor:=1;
+                                if y=0 then y:=2;
+                                cursor.y:=ycursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+                                end;
+                        274 :   begin
+
+                                case (y div 2) of
+                                1, 3, 5, 7 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+                                2, 4, 6, 8 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+
+                                end;
+
+                                ycursor:=ycursor+imagelongueur;
+                                y:=y+2;
+                                if ycursor=1+8*imagelongueur then ycursor:=1+7*imagelongueur;
+                                if y=18 then y:=16;
+
+
+                                cursor.y:=ycursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+                                end;
+
+                        276 :   begin
+                                case (y div 2) of
+                                1, 3, 5, 7 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+                                2, 4, 6, 8 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+
+                                end;
+
+                                xcursor:=xcursor-imagelargeur;
+                                x:=x-4;
+                                if xcursor=1-imagelargeur then xcursor:=1;
+                                if x=-2 then x:=2;
+                                cursor.x:=xcursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+                                end;
+                        275 :   begin
+                                case (y div 2) of
+                                1, 3, 5, 7 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+                                2, 4, 6, 8 :case (((x-2) div 4)+1) of
+                                            1, 3, 5, 7 : begin sdl_blitsurface(curseurnoir,nil, window,@cursor);sdl_flip(window);end;
+                                            2, 4, 6, 8 : begin sdl_blitsurface(curseurblanc,nil, window,@cursor);sdl_flip(window);end;
+                                            end;
+
+                                end;
+                                xcursor:=xcursor+imagelargeur;
+                                x:=x+4;
+                                if xcursor=1+8*imagelargeur then xcursor:=1+7*imagelargeur;
+                                if x=34 then x:=30;
+
+
+                                cursor.x:=xcursor;sdl_blitsurface(curseur,nil, window,@cursor);sdl_flip(window);
+                                end;
+                        27  : loop:=TRUE;
+                        13  : begin deplacement(tempsdebase1,tempsdebase2,temps_debut_program,t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,delay11,delay22,tps_initial1,tps_initial2,x,y,cste,a,r1,r2,t1,t11,t2,t22,x3tab,y3tab,x4tab,y4tab,x5tab,y5tab,x6tab,y6tab,compteur,p1,p2,p3,p4,echecmat,prise_en_passant0,echec,vf,selectionimpossible);
+                                    repetitionpat:=0; repetitionechec:=0;
+                              end;
+
+                        end;
+
                    END;
       SDL_KEYUP: ;
       SDL_MOUSEMOTION: ;
       SDL_MOUSEBUTTONDOWN:;
       SDL_MOUSEBUTTONUP: ;
-      
-      
+
+
     END;
   END
-  ELSE timer(a,tempsdebase1,tempsdebase2,temps_debut_program,delay11,delay22,t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,tps_initial1,tps_initial2,wsh1,wsh2) end;
+  ELSE timer(a,tempsdebase1,tempsdebase2,temps_debut_program,delay11,delay22,t,tt,ss,sss,minute,seconde,minute2,seconde2,delay1,delay2,tps_initial1,tps_initial2) end;
 
-	echek(a,echec);
-	if echec=true then
-	begin
-	echekmat(a,echecmat);
-			if echecmat=true then
-				begin
-					tailletext.x:=80;
-					tailletext.y:=500;
-					sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-					if a=2 then 
-						begin sdl_blitsurface(echecetmatlejoueur1lemporte, nil, window, @tailletext);sdl_flip(window);end;
-					if a=1 then 
-						begin sdl_blitsurface(echecetmatlejoueur2lemporte, nil, window, @tailletext);sdl_flip(window);end;
-				end;
-	end;
+    echek(a,echec);
+    if echec=true then
+    begin
+    echekmat(a,echecmat);
+            if echecmat=true then
+                begin
+                    tailletext.x:=80;
+                    tailletext.y:=500;
+                    sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+                    if a=2 then
+                        begin sdl_blitsurface(echecetmatlejoueur1lemporte, nil, window, @tailletext);sdl_flip(window);end;
+                    if a=1 then
+                        begin sdl_blitsurface(echecetmatlejoueur2lemporte, nil, window, @tailletext);sdl_flip(window);end;
+                end;
+    end;
 
 until((loop=true) or (echecmat=true)or(pat0=true) or ( (minute=0)and(seconde=0) ) or ((minute2=0)and(seconde2=0)));
 
 
 DISPOSE(test_event);
-		
-		
-		
-		if (minute=0) and (seconde=0) then
-		begin
-		tailletext.x:=80;
-		tailletext.y:=500;
-		sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-		sdl_blitsurface(patte, nil, window, @tailletext);sdl_flip(window);
-		textbackground(black); textcolor(2); writeln('Victoire du joueur 2');
-		end;
-		
-		if (minute2=0) and (seconde2=0) then
-		begin
-		tailletext.x:=80;
-		tailletext.y:=500;
-		sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-		sdl_blitsurface(patte, nil, window, @tailletext);sdl_flip(window);
-		textbackground(black); textcolor(2); writeln('Victoire du joueur 1');
-		end;
-		if pat0=true then
-		begin
-		tailletext.x:=80;
-		tailletext.y:=500;
-		sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-		sdl_blitsurface(patte, nil, window, @tailletext);sdl_flip(window);
-		textbackground(black); textcolor(2); writeln('Egalite');
-		end;
-		if loop=true then
-		begin
-		tailletext.x:=80;
-		tailletext.y:=500;
-		sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
-		sdl_blitsurface(partieterminee, nil, window, @tailletext);sdl_flip(window);
-		end;
-		delay(500);
-		repeat
-		SDL_POLLEVENT(test_event);
-	    if test_event^.type_ = SDL_KEYDOWN then
+
+
+
+        if (minute=0) and (seconde=0) then
+        begin
+        textbackground(black); textcolor(2); writeln('Temps ecoule du joueur 1, Victoire du joueur 2 !');
+        end;
+
+        if (minute2=0) and (seconde2=0) then
+        begin
+        textbackground(black); textcolor(2); writeln('Temps ecoule du joueur 2, Victoire du joueur 1');
+        end;
+        if pat0=true then
+        begin
+        tailletext.x:=80;
+        tailletext.y:=500;
+        sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+        sdl_blitsurface(patte, nil, window, @tailletext);sdl_flip(window);
+        textbackground(black); textcolor(2); writeln('Egalite');
+        end;
+        if loop=true then
+        begin
+        tailletext.x:=80;
+        tailletext.y:=500;
+        sdl_blitsurface(textnoir, nil, window, @tailletext);sdl_flip(window);
+        sdl_blitsurface(partieterminee, nil, window, @tailletext);sdl_flip(window);
+        end;
+        delay(500);
+        repeat
+        SDL_POLLEVENT(test_event);
+        if test_event^.type_ = SDL_KEYDOWN then
         until test_event^.key.keysym.sym<>13;
         freeimagecase();
-		sdl_freesurface(window);
-		sdl_quit();
-		
-	end;{curseur}
+        sdl_freesurface(window);
+        sdl_quit();
+
+    end;{curseur}
 if echecmat=true then begin textbackground(black); textcolor(2); case a of 1:a:=2;2:a:=1; end; writeln('Victoire du joueur ',a); end;
 end.

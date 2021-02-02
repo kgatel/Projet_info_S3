@@ -14,7 +14,7 @@ var a,r1,r2,t1,t11,t22,t2,i,j : integer;
 	compteur_0: Longint;
 	wsh1,wsh2 : boolean;
 
-const adresse ='C:\Users\kevga\Documents\test\sauve.txt';
+const adresse ='sauve.txt';
 
 procedure caze(i,j : integer);
 begin
